@@ -6,8 +6,22 @@
 </script>
 
 <button on:click={increment}>
-  Clicks: {count}
+  Click
 </button>
+
+{#if count > 0}
+  <p>
+    Clicks: {count}
+  </p>
+{/if}
+
+{#if count <= 10 && count > 5}
+    <h2>more than 5 clicks!</h2>
+{:else if count > 10}
+    <h2>wow that's a lot of clicks!</h2>
+{:else}
+    <h2>keep clicking!</h2>
+{/if}
 
 <style>
   button {

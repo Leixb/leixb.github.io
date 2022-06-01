@@ -1,23 +1,19 @@
 <script lang="ts">
-  import logo from './assets/svelte.png'
+  import logo from './assets/profile.png'
   import Counter from './lib/Counter.svelte'
 </script>
 
 <main>
   <img src={logo} alt="Svelte Logo" />
-  <h1>Hello Typescript!</h1>
+  <h1>Hello There!</h1>
+
+  <p>🚧 This site is under construction, check back later! 🚧</p>
 
   <Counter />
 
-  <p>
-    Visit <a href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte
-    apps.
-  </p>
-
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme">SvelteKit</a> for
-    the officially supported framework, also powered by Vite!
-  </p>
+  <footer>
+    <p>Built with <a href="https://svelte.dev">Svelte</a></p>
+  </footer>
 </main>
 
 <style>
@@ -61,5 +57,13 @@
     p {
       max-width: none;
     }
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color: gray;
   }
 </style>
