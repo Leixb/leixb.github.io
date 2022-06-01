@@ -30,6 +30,9 @@ jobs:
           pnpm check
           pnpm run build
 
+      - name: Disable Jekyll 👻
+        run: touch build/.nojekyll
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
