@@ -17,7 +17,7 @@ jobs:
       - name: Set node version 💈
         uses: actions/setup-node@v3
         with:
-          node-version: 16.15.0
+          node-version: 18.2.0
 
       - name: Setup PNPM 📦
         uses: pnpm/action-setup@v2.2.2
@@ -34,4 +34,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           branch: gh-pages
-          folder: dist
+          folder: build
